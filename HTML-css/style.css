@@ -27,3 +27,14 @@ nav a {
     margin-left: 15px;
     font-weight: 500;
 }
+.grid-layout {display: grid;grid-template-columns: 1fr 1fr; gap: 15px;margin-top: 20px;margin-bottom: 25px;}
+
+.card {
+    border: 1.5px solid #534582;border-radius: 12px;padding: 18px;background-color: #faf9fd;
+box-shadow: 0 4px 10px rgba(83, 69, 130, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.card:hover{transform : translateY(-5px);box-shadow:0 10px rgba (83, 69, 130, 0.16) ;}
+
+.card h4 {color : #534582;}
