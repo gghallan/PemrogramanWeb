@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
 *{ margin : 0; padding :0; box-sizing : border-box;}
 
 body { 
@@ -12,3 +14,16 @@ margin : 30px auto; background-color: #ffffff; padding : 25px; border:1px solid 
 .navbar{ display:flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding-bottom: 15px;
  border-bottom:1px solid #534582   }
 
+.navbar .logo {
+    font-family: Roboto;
+    font-weight: bold;
+    color: #534582;
+    font-size: 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #534582;
+    margin-left: 15px;
+    font-weight: 500;
+}
