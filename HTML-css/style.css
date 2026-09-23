@@ -45,3 +45,13 @@ body { font-family:Roboto; background-color: #eef2f3;}
 body { 
     font-family: 'Roboto', sans-serif;background: linear-gradient(135deg, #e9e4f7 0%, #ded8f3 100%);color: #534582;min-height: 100vh;
 }
+
+.title-gede{ font-size: 4.5rem;
+    font-weight: 900; color: #534582;
+ letter-spacing: -2px;line-height: 1;margin: 15px 0;;}
+ .cards-right {
+    display: flex;flex-direction: column;gap: 16px;
+}
+.card img {
+    width: 65px;display: block;margin: 8px auto;
+}
