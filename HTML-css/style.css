@@ -3,13 +3,14 @@
 *{ margin : 0; padding :0; box-sizing : border-box;}
 
 body { 
-    font-family: Roboto;
-    background-color: #eef2f3;
+    font-family: Roboto, sans-serif;
+    background: linear-gradient(135deg, #e9e4f7 0%, #ded8f3 100%); color:#534582;
+    min-height: 100vh;padding : 40px 30px;
 
 }
 
-.container { width: 800px;
-margin : 30px auto; background-color: #ffffff; padding : 25px; border:1px solid #ccc}
+.container { max-width: 1180px;
+margin : 0 auto; display : grid; grid-template-columns: 1.55fr 1fr; gap : 36px;align-items:start;}
 
 .navbar{ display:flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding-bottom: 15px;
  border-bottom:1px solid #534582   }
