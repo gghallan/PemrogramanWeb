@@ -2,6 +2,19 @@
 <head>
     <title>Tugas 4 JawaScript</title>
     <style>
+        body {font-family: :Arial, Helvetica, sans-serif;
+        margin: 20px}
+
+        .kotak-utama{
+            border :1px solid black;
+            width: : 550px;
+            padding : 20px
+            margin-top :15px;
+
+        }
+
+
+        </style>
 </head>
 <body>
     <table>
@@ -17,5 +30,20 @@
             </td>
         </tr>
     </table>
+    <div class="kotak-utama">
+        <div class="baris-input">
+            <span class="label-biru ">Nama :</span>
+            <input type="text" id="nama" placeholder="<your nama">
+        </div>
+
+        <div class ="baris-input">
+            <span class="label-biru">Jumlah :</span>
+            <input type="number" id="jumlah" placeholder="<jumlah pilihan,minimal 1">
+        </div>
+        <button type="button" class="tombol=ok" id="btnOK1" onclick="prosesLangkah1()">ok</button>
+        
+    </div>
+
+
 </body>
 </html>
