@@ -40,8 +40,8 @@ btn.className = "tombol-ok";
 btn.id = "btnOk2";
 btn.innerText = "OK";
 btn.onclick = prosesLangkah2; 
-}
 wadah.appendChild(btn);
+}
 function prosesLangkah2() {
     var inputs =document.getElementsByClassName("input-teks-pilihan");
     daftarPilihan = [];
@@ -56,7 +56,7 @@ function prosesLangkah2() {
         daftarPilihan.push(teks); //masuk array
     }
 
-    document.getElementById("btnOk2").disabled = true;}
+    document.getElementById("btnOk2").disabled = true;
 
 var wadahOpsi=document.getElementById("wadahOpsi");
 wadahOpsi.innerHTML="";
@@ -79,7 +79,7 @@ var divRadio=document.createElement("div");
         if(i === 0){
             rd.checked = true; // default pilih opsi ke-1 persis di PDF
         }
-//6
+
   var lbl = document.createElement("label");
         lbl.htmlFor = "radio_" + i;
         lbl.className = "label-biru";
@@ -93,3 +93,26 @@ lblDropdown.className="label-biru";lblDropdown.style.fontWeight="bold";
 lblDropdown.style.margin="12px 0 6px 0";
 lblDropdown.innerText="or dalam bentuk Drop Down";
 wadahOpsi.appendChild(lblDropdown);
+
+var selectElement = document.createElement("select");
+selectElement.id = "selectPilihan";
+selectElement.style.minWidth = "160px";
+
+for (var i = 0; i < daftarPilihan.length; i++) {
+        var opt = document.createElement("option");
+        opt.value = daftarPilihan[i];
+        opt.innerText = daftarPilihan[i];
+        selectElement.appendChild(opt);}
+ 
+wadahOpsi.appendChild(selectElement);
+    var br = document.createElement("br");
+    wadahOpsi.appendChild(br);
+    var btn3 = document.createElement("button");
+    btn3.type = "button";
+    btn3.className = "tombol-ok";
+    btn3.id = "btnOk3";
+    btn3.innerText = "OK";
+    btn3.style.marginTop = "10px";
+    btn3.onclick = prosesLangkah3; 
+    wadahOpsi.appendChild(btn3);
+}
