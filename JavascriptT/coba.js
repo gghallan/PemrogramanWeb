@@ -40,10 +40,10 @@ btn.className = "tombol-ok";
 btn.id = "btnOk2";
 btn.innerText = "OK";
 btn.onclick = prosesLangkah2; 
-
+}
 wadah.appendChild(btn);
 function prosesLangkah2() {
-    var inputs =document.getElementsByClassName("iteks-pilihan");
+    var inputs =document.getElementsByClassName("input-teks-pilihan");
     daftarPilihan = [];
     for (var i = 0; i < inputs.length; i++) {
         var teks = inputs[i].value.trim();
@@ -58,5 +58,14 @@ function prosesLangkah2() {
 
     document.getElementById("btnOk2").disabled = true;}
 
+var wadahOpsi=document.getElementById("wadahOpsi");
+wadahOpsi.innerHTML="";
+var lblPilihan=document.createElement("p");
+lblPilihan.className="label-biru";
+lblPilihan.style.fontWeight="bold";
+lblPilihan.style.margin="12px 0 6px 0";
+lblPilihan.innerText="Pilihan :";
+wadahOpsi.appendChild(lblPilihan);
 
-}
+
+
