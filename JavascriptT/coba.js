@@ -67,5 +67,15 @@ lblPilihan.style.margin="12px 0 6px 0";
 lblPilihan.innerText="Pilihan :";
 wadahOpsi.appendChild(lblPilihan);
 
-
-
+var divRadio=document.createElement("div");
+    for (var i=0;i<daftarPilihan.length;i++) {
+        var itemRadio=document.createElement("div");
+        itemRadio.style.marginBottom="4px";
+        var rd=document.createElement("input");
+        rd.type="radio";
+        rd.name="radioPilihan"; // name harus sama biar cuma bisa pilih satu
+        rd.id="radio_" + i;
+        rd.value=daftarPilihan[i];
+        if(i === 0){
+            rd.checked = true; // default pilih opsi ke-1 persis di PDF
+        }}
