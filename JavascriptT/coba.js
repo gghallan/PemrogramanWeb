@@ -78,4 +78,18 @@ var divRadio=document.createElement("div");
         rd.value=daftarPilihan[i];
         if(i === 0){
             rd.checked = true; // default pilih opsi ke-1 persis di PDF
-        }}
+        }
+//6
+  var lbl = document.createElement("label");
+        lbl.htmlFor = "radio_" + i;
+        lbl.className = "label-biru";
+        lbl.innerText = " " + daftarPilihan[i];
+        itemRadio.appendChild(rd);
+        itemRadio.appendChild(lbl);
+        divRadio.appendChild(itemRadio);}
+ wadahOpsi.appendChild(divRadio);
+var lblDropdown=document.createElement("p");
+lblDropdown.className="label-biru";lblDropdown.style.fontWeight="bold";
+lblDropdown.style.margin="12px 0 6px 0";
+lblDropdown.innerText="or dalam bentuk Drop Down";
+wadahOpsi.appendChild(lblDropdown);
