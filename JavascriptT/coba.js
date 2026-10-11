@@ -34,6 +34,12 @@ for(var i=1;i<=jumlahPilihan;i++){
     divBaris.innerHTML= '<span class="label-biru">Pilihan ' + i + ' :</span>'+'<input type="text" class="input-teks-pilihan" id="pilihan ke' + i + '" placeholder="<Teks ' + i + '>">';
 wadah.appendChild(divBaris)
 }
+var btn=document.createElement("button");
+btn.type="button";
+btn.className = "tombol-ok";
+btn.id = "btnOk2";
+btn.innerText = "OK";
+btn.onclick = prosesLangkah2; 
 
 
 }
