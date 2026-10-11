@@ -41,5 +41,22 @@ btn.id = "btnOk2";
 btn.innerText = "OK";
 btn.onclick = prosesLangkah2; 
 
+wadah.appendChild(btn);
+function prosesLangkah2() {
+    var inputs =document.getElementsByClassName("iteks-pilihan");
+    daftarPilihan = [];
+    for (var i = 0; i < inputs.length; i++) {
+        var teks = inputs[i].value.trim();
+
+        if (teks===""){
+            alert("Pilihan "+(i + 1)+"jangan kosong2 adix");
+            inputs[i].focus();
+            return;
+        }
+        daftarPilihan.push(teks); //masuk array
+    }
+
+    document.getElementById("btnOk2").disabled = true;}
+
 
 }
