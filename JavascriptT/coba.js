@@ -116,3 +116,15 @@ wadahOpsi.appendChild(selectElement);
     btn3.onclick = prosesLangkah3; 
     wadahOpsi.appendChild(btn3);
 }
+
+function prosesLangkah3() {
+    pilihanYangDipilih = "";
+    var radios=document.getElementsByName("radioPilihan");
+    for (var i=0;i<radios.length;i++) {
+        if (radios[i].checked){
+            pilihanYangDipilih=radios[i].value;
+            break;
+        }
+    }
+    if (pilihanYangDipilih==="") {
+        pilihanYangDipilih=document.getElementById("selectPilihan").value;}}
