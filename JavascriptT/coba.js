@@ -127,7 +127,7 @@ function prosesLangkah3() {
         }
     }
     if (pilihanYangDipilih==="") {
-        pilihanYangDipilih=document.getElementById("selectPilihan").value;}}
+        pilihanYangDipilih=document.getElementById("selectPilihan").value;}
      
     if (!pilihanYangDipilih) {
         alert("Pilih salah satu opsi dulu");
@@ -141,3 +141,12 @@ function prosesLangkah3() {
     divEmail.innerHTML='<span class="label-biru">email :</span> ' +
                          '<input type="text" id="inputEmail" placeholder="<email@domain.com>" style="width: 250px;">';
     wadahEmail.appendChild(divEmail);    
+
+       var btn4 = document.createElement("button");
+    btn4.type = "button";
+    btn4.className = "tombol-ok";
+    btn4.id = "btnOk4";
+    btn4.innerText = "OK";
+    btn4.onclick = prosesLangkah4;
+    wadahEmail.appendChild(btn4);
+}
