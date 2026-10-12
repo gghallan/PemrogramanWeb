@@ -128,3 +128,16 @@ function prosesLangkah3() {
     }
     if (pilihanYangDipilih==="") {
         pilihanYangDipilih=document.getElementById("selectPilihan").value;}}
+     
+    if (!pilihanYangDipilih) {
+        alert("Pilih salah satu opsi dulu");
+        return;}
+    document.getElementById("btnOk3").disabled = true;
+    var wadahEmail=document.getElementById("wadahEmail");
+    wadahEmail.innerHTML="";
+    var divEmail=document.createElement("div");
+    divEmail.className="baris-input";
+    divEmail.style.marginTop="10px";
+    divEmail.innerHTML='<span class="label-biru">email :</span> ' +
+                         '<input type="text" id="inputEmail" placeholder="<email@domain.com>" style="width: 250px;">';
+    wadahEmail.appendChild(divEmail);    
