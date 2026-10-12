@@ -173,5 +173,7 @@ function prosesLangkah4() {
                      " saya mempunyai sejumlah " + jumlahPilihan + " pilihan yaitu " + 
                      teksDaftar + ", dan saya memilih " + pilihanYangDipilih; //susun kaliamt
                      
-
+  var wadahHasil = document.getElementById("wadahHasil");
+    wadahHasil.style.display = "block";
+    wadahHasil.innerText = teksOutput;
 }
