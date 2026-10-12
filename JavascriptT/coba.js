@@ -160,4 +160,18 @@ function prosesLangkah4() {
         return;
     }
 
-    
+    var polaEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!polaEmail.test(email)) {
+        alert("format tidak valid silahkan masukan format yang valid.");
+        emailInput.focus();
+        emailInput.select();
+        return;
+    }
+
+ var teksDaftar = daftarPilihan.join(", ");
+    var teksOutput = "Hallo,nama saya " + namaUser + ",email " + email + 
+                     " saya mempunyai sejumlah " + jumlahPilihan + " pilihan yaitu " + 
+                     teksDaftar + ", dan saya memilih " + pilihanYangDipilih; //susun kaliamt
+                     
+
+}
