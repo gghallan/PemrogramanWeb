@@ -150,3 +150,14 @@ function prosesLangkah3() {
     btn4.onclick = prosesLangkah4;
     wadahEmail.appendChild(btn4);
 }
+
+function prosesLangkah4() {
+    var emailInput = document.getElementById("inputEmail");
+    var email = emailInput.value.trim();
+    if (email === "") { //tangkap error
+        alert("email ndak boleh kosong");
+        emailInput.focus();
+        return;
+    }
+
+    
